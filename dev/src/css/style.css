@@ -1,0 +1,155 @@
+/**
+* @Author: Nicolas Fazio <webmaster-fazio>
+* @Date:   13-01-2017
+* @Email:  contact@nicolasfazio.ch
+* @Last modified by:   webmaster-fazio
+* @Last modified time: 16-01-2017
+*/
+
+/*
+  use your custom css
+*/
+html ,body, section {
+  background: #333;
+}
+section:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(180deg,rgba(0,0,0,.6),transparent);
+  width: 100%;
+  height: 84px;
+  top:0;
+  left:0;
+}
+section:after{
+  content: '';
+  position: absolute;
+  background: linear-gradient(0deg,rgba(0,0,0,.6),transparent);
+  width: 100%;
+  height: 84px;
+  bottom:0;
+  left:0;
+}
+section {
+  height :100%;
+  width :100%;
+  position :absolute;
+  top :0;
+  left : 0;
+  padding : 0px;
+  color : #888;
+  overflow: hidden;
+}
+.valign {
+  width: 100%;
+}
+#download {
+  cursor: pointer;
+  display: inline;
+}
+*.btn {
+  border: 1px solid #fff;
+}
+.valign.center-align{
+  width: 100%;
+  background: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+}
+.greetings {
+  font-size: 3.2rem;
+  margin: 0;
+}
+nav {
+  position: absolute;
+  width: 100%;
+  top:0px;
+  left: 0;
+}
+.material-icons, a{
+  color: rgba(255, 255, 255, 0.50);
+}
+.input-field .prefix.active,.material-icons:hover, a:hover, address:hover,.input-field input[type=search]:focus+label i, .input-field input[type=search]:focus+label i, .input-field input[type=search]:focus ~ .mdi-navigation-close, .input-field input[type=search]:focus ~ .material-icons {
+  color: rgba(255, 255, 255, 1);
+}
+.input-field .prefix ~ input {
+  margin-left: 1rem;
+}
+.input-field input[type=search]:focus {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+footer {
+  position: absolute;
+  bottom:0px;
+  left:0;
+  width: 100%;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.50);
+}
+footer a, #logout {
+  text-decoration: underline;
+  font-style: italic;
+  cursor: pointer;
+}
+footer .row {
+  margin-bottom:10px;
+}
+#close{
+  /*background: red;*/
+  width: 80px; /*50px;*/
+  /*height: 50px;*/
+  position: absolute;
+  top: -40px; /*-50px;*/
+  left:50%;
+  padding: 10px 15px;
+  margin-left: -40px;/*-25px;*/
+  color: rgba(255, 255, 255, 0.50);
+  cursor: pointer;
+}
+#close:hover {
+  color:#fff;
+}
+aside {
+  position: absolute;
+  left:0;
+  bottom: -450px;
+  background: #333;
+  display: block;
+  width: 100%;
+  height: 450px;
+  max-height: 450px;
+  z-index: 2;
+  transition: 0.25s all ease;
+}
+aside.open {
+  transform: translateY(-450px);
+}
+aside.open #close {
+  background: #333;
+  color:#fff;
+}
+button,button:focus  {
+  background: #fff;
+  color:#333;
+  border:0px;
+  padding: 3px 20px;
+}
+aside h1 {
+  font-size: 1.8rem;
+}
+aside .row {
+  margin-bottom: 0px;
+}
+aside input[type=text], aside input[type=url] {
+  height: 2rem;
+}
+/* CSS Animation Effects */
+section {
+  background-size: cover !important;
+}
+*.displayOpacity{
+  opacity: 0;
+}
+*.fadeIn {
+  opacity: 1;
+  transition: 0.2s ease;
+}
